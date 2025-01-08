@@ -1,0 +1,381 @@
+*{
+    margin: 0; padding: 0;
+}
+    /* Header */
+header{
+    width: 100%;
+    height: 100;
+    background-image: linear-gradient(to left, white 80%, rgb(195, 245, 255) 20%);
+}
+.nevsection{
+    width: 100%; height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, white 80%, #c3f5ff 20%);
+}
+.logo{
+    width: 30%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    font-size: 1.6rem;
+    animation: Animation 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes Animation {
+    from {padding-left: 40%;}
+    to {padding-right: 40%;}
+}
+
+nav {
+    margin-left: 15rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 1000;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+}
+nav a:first-child{
+    color: #854fee;
+}
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #854fee;
+    transition: all 0.4s linear ; 
+}
+nav a:hover:before{
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightside{
+    float: right;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.7);
+}
+.rightside img{
+    max-width: 500px;
+    height: 500px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: #e8fbff;
+
+}
+.leftside{
+    float: left;
+    width: 50%;
+    grid-area: 50%;
+    color: #000;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+.leftside h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.leftside h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.leftside h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.btn1{
+    margin-left: 5%;
+    border: 3px solid #854fee;
+    background: none;
+    padding: 10px 15px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+.btn1:hover{
+    color: #854fee;
+    border-color: black;
+}
+.mobile-navbar-btn{
+    display: none;
+}
+.mobile-icon[name='close']{
+    display: none;
+}
+
+    /* About Me */
+     
+.vl{
+    width: 100%; height: 1px;
+    background-color: rgba(195, 245, 255, 0.1);
+}    
+.aface{
+    background-color: rgba(195, 245, 255, 0.1);
+}    
+#about{
+    margin: 5rem;
+}
+    /* EDU */
+.edu{
+    margin: 5rem;
+    display: flex;
+    background-color: rgba(195, 245, 255, 0.2);
+}
+.sub-edu{
+    width: 70%;
+}
+.edu-img{
+    width: 30%;
+    margin: 1rem;
+}
+.matric{
+    float: left;
+    width: 50%;
+    
+}
+.m-table{
+    border-collapse: collapse;
+    margin: 25px ;
+    min-width: 400px;
+    min-height: 150px;
+}
+.m-table tbody tr{
+    border-bottom: 1px solid;
+}
+.m-table tbody tr:nth-of-type(odd){
+    background-color: rgb(133, 79, 238, 0.2);
+}
+.inter{
+    width: 50%;
+    float: right;
+}
+.i-table{
+    border-collapse: collapse;
+    margin: 25px ;
+    min-width: 400px;
+    min-height: 150px;
+}
+.i-table tbody tr{
+    border-bottom: 1px solid;
+}
+.i-table tbody tr:nth-of-type(odd){
+    background-color: rgb(133, 79, 238, 0.2);
+}
+    /* Skills */      
+.skills{
+    margin: 5rem;
+    display: flex;
+    background-color: rgba(195, 245, 255, 0.2);
+}
+.sub-skills{
+    width: 70%;
+}
+.skill-img{
+    width: 30%;
+    margin: 5rem;
+}
+.ht-cs{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.ht{
+    width: 50%;
+    float: left;
+    margin-left: 2rem;
+}
+.cs{
+    width: 50%;
+    float: right;
+    margin-left: 2rem;
+}
+.ja-ms{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.ja{
+    width: 45%;
+    float: left;
+    margin-left: 2rem;
+}
+.ms{
+    width: 45%;
+    float: right;
+    margin-left: 2rem;
+}
+    /* Exp */
+.exp{
+    margin: 5rem;
+    display: flex;
+    background-color: rgba(195, 245, 255, 0.2);
+    gap: 1rem;
+}
+.sub-exp{
+    width: 70%;
+}
+.exp-img{
+    width: 30%;
+    margin: 1rem;
+}
+
+    /* Conatct Us */
+.vl2{
+    width: 100%; height: 1px;
+    background-color: #e8fbff;
+}    
+.cface{
+    background-color: #e8fbff;
+}
+#contact{
+    margin: 5rem;
+    display: flex;
+}    
+.cleft{
+    float: left;
+    width: 50%;
+}
+.icon{
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+}
+.cright{
+    float: right;
+    width: 50%;
+}
+.form{
+    margin-top: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.subf{
+    width: 18rem; height: 3rem;
+    border-radius: 5px;
+}
+#msg{
+    overflow: hidden;
+    resize: none;
+    width: 37rem; height: 7rem;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+:placeholder-shown{
+    font-weight: bolder;
+}
+.btn2{
+    margin-left: 15.5rem;
+    background: rgb(133, 79, 238);
+    padding: 10px 15px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 15px;
+    color: wheat;
+}
+.btn2:hover{
+    padding: 12px 18px;
+    position: relative;
+    transition: 0.3s;
+}
+input{
+    font-size: 1.3rem;
+}
+
+/* Media */
+
+@media (max-width:1500px) {
+    .sub-edu{
+        display: flex;
+        flex-direction: column;
+    }
+    .matric .inter{
+        margin-left: 5rem;
+    }
+}
+@media (max-width:1360px) {
+    html{
+        font-size: large;
+    }
+    .btn2{
+        margin-left: 6rem;
+    }
+    #msg{
+        width: 18rem; height: 6rem;
+    }
+    .ht-cs{
+
+    }
+    .ht h4{
+        max-width: 20rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .cs h4{
+        max-width: 20rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .ja h4{
+        max-width: 20rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .ms h4{
+        max-width: 20rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+@media (max-width:1050px) {
+    
+}
+@media (max-width:980px) {
+    html{
+        font-size: larger;
+    }
+    #contact{
+        flex-direction: column;
+    }    
+    .cleft{
+        width: 100%;
+    }
+    .cright{
+        width: 100%;
+    }
+    #msg{
+        width: 37rem; height: 7rem;
+    }
+    .btn2{
+        margin-left: 15.5rem;
+    }
+}

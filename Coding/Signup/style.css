@@ -1,0 +1,107 @@
+*{
+    margin: 0;  padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --primary-color: #000839;
+    --primary-shades: #00020b;
+    --para-color: #80849c;
+    --helper-color: #1264fa;
+    --white: #fff;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+
+    /* header and navbar style start */
+.header{
+    height: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.4rem;
+    background-image: linear-gradient(to top, white 80%, #c3f5ff 20%);
+}
+.logo{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.logo a{
+    color: var(--helper-color);
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    font-size: 1.5rem;
+}
+.navbar-list .navbar-btn{
+    padding: 1.2rem 2.4rem;
+    background-color: white;
+    border: 2px solid var(--helper-color);
+    color: var(--primary-color);
+    border-radius: 5rem;
+}
+.navbar-list .navbar-btn:hover{
+    border: 2px solid var(--primary-color);
+    color: var(--helper-color);
+    transition: all 0.3s;
+}
+.navbar-list .navbar-link:hover{
+    color: var(--helper-color);
+    transition: all 0.5s linear;
+}
+.navbar-link{
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+/* Form */
+.form{
+    border: 3px solid var(--primary-shades);
+    background-color:  rgba(0, 0, 0,0.4);
+    border-radius: 25px;
+    text-align: center;
+    width: 300px; height: 500px;
+    box-shadow: 3px 10px 7px;
+}
+.plch{
+    background-color: var(--primary-shades);
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+}
+#btn{
+    background: rgba(35, 35, 187,0.3);
+    width: 120px; 
+    border: 2px solid black; border-radius: 15px;
+    font-size: larger;
+    cursor: pointer;
+    color: rgb(201, 176, 176);
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.login{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.log{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+h2{
+    margin-right: 70px;
+}
