@@ -1,180 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
+
 <body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Rauf Ahmad</a>
 
-    <!--Header-->
-    <header>
-        <section class="nevsection">
-            <div class="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#contact">Contact Us</a>
-                <a href="man.png" download="My CV" >Download CV</a>
-            </nav>
-            <div class="mobile-navbar-btn">
-                <ion-icon name="menu" class="mobile-icon"></ion-icon>
-                <ion-icon name="close" class="mobile-icon"></ion-icon>
-            </div>
-        </section>
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link active" data-tooltip="Home">Home</a></li>
+                <li><a href="#about" class="nav__link" data-tooltip="About">About</a></li>
+                <li><a href="#skills" class="nav__link" data-tooltip="Skills">Skills</a></li>
+                <li><a href="#work" class="nav__link" data-tooltip="Work">Work</a></li>
+                <li><a href="#contact" class="nav__link" data-tooltip="Contact">Contact</a></li>
+            </ul>
 
-        <main>
-            <div class="leftside">
-                <h2>Hi There,</h2>
-                <h1>I'm Rauf Ahmad</h1>
-                <h3> <ion-icon name="desktop-outline"></ion-icon> Web Developer</h3>
-                    <button class="btn1">Hire Me</button>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
             </div>
-            <div class="rightside">
-                <img src="man.png">
-            </div>
-        </main>
+        </nav>
     </header>
 
-    <!--About Me-->
 
-    <div id="about">
-        <!--Education-->
-        <div class="edu">
-        <div class="sub-edu">
-            <h1>Education</h1>
-            <div class="matric">
-                <h2> <br><br> Matriculation </h2> <br>
-                <h3>
-                <table class="m-table">
-                    <tbody>
-                        <tr>
-                            <td> School </td> <td> Moon Public School </td>
-                        </tr>
-                        <tr>
-                            <td> Subject </td> <td> ICS </td>
-                        </tr>
-                        <tr>
-                            <td> Grade </td> <td> A </td>
-                        </tr>
-                        <tr>
-                            <td> Obtained Markes </td> <td> 803 (73%) </td>
-                        </tr>
-                        <tr>
-                            <td> Total Marks </td> <td> 1100 </td>
-                        </tr>
-                    </tbody>
-                </table> </h3>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h2>Hi,<br>I'm <span class="blue-text">Rauf Ahmad</span></h2>
+
+                <h3>Web Designer</h3>
+
+                <a href="my CV.pdf" download="MY CV" class="contact-btn">Download CV</a>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rauf-ahmad-b51269344/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/raufahmad100/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+
             </div>
-            <div class="inter">
-                <h2> <br><br> Intermediate </h2> <br>
-                <h3>
-                <table class="i-table">
-                    <tbody>
-                        <tr>
-                            <td> College </td> <td> MAO College </td>
-                        </tr>
-                        <tr>
-                            <td> Subject </td> <td> CS </td>
-                        </tr>
-                        <tr>
-                            <td> Grade </td> <td> B </td>
-                        </tr>
-                        <tr>
-                            <td> Obtained Markes </td> <td> 736 (67%) </td>
-                        </tr>
-                        <tr>
-                            <td> Total Marks </td> <td> 1100 </td>
-                        </tr>
-                    </tbody>
-                </table> </h3>
+
+            <div class="hero-image">
+                <img src="perfil.png" alt="Profile Photo">
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+    <section class="about" id="about">
+        <h1 class="about-title">About</h1>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="about.jpg" alt="Rauf Profile">
+            </div>
+            <div class="about-text">
+                <h2>I'm Rauf Ahmad</h2>
+                <p>As a passionate web designer, I thrive on creating visually appealing and user-friendly websites. My
+                    journey in web design began with a fascination for how design can enhance user experience</p>
             </div>
         </div>
-            <div class="edu-img">
-                <br><br><br><br><br>
-                <img src="education.png" width="300">
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="skills-container" id="skills">
+
+        <div class="skills-header">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="skills-content">
+
+            <div class="skills-text">
+
+                <h2>Professional Skills</h2>
+                <p>I love to think outside the box and bring unique ideas to life through design, I have proficiency in
+                    HTML, CSS, and JavaScript, that ensure that my designs are not only beautiful but also functional. I
+                    prioritize the needs and preferences of users, conducting research to understand their behaviors and
+                    preferences.</p>
+
+                <div class="skill-bars">
+
+                    <div class="skill-item">
+
+                        <i class="fab fa-html5 skill-icon"></i>
+
+                        <div class="skill-info">
+
+                            <div class="skill-name">HTML5</div>
+
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percentage">95%</span>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <div class="skill-info">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-js skill-icon"></i>
+                        <div class="skill-info">
+                            <div class="skill-name">JAVASCRIPT</div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="skill-item">
+                        <i class="fas fa-pencil-alt skill-icon"></i>
+                        <div class="skill-info">
+                            <div class="skill-name">UX/UI</div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="skills-image">
+                <img src="work3.jpg" alt="Skills Image">
+            </div>
+
+        </div>
+
     </div>
-    <!--Skills-->
-        <div class="skills">
-            <div class="sub-skills">
-            <h1>Skills</h1> <br>
-            <div class="ht-cs">
-                <div class="ht">
-            <h2>Html <ion-icon name="logo-html5"></ion-icon> </h2>
-                <h4> &nbsp;&nbsp;&nbsp; Over the past two years, I have been actively working on HTML as a web developer and have independently created multiple <a href="Coding/Games.html" target="_blank"> WEBSITES </a>. As a result, I have developed a strong understanding of HTML and its capabilities. However, I am eager to continue learning and expanding my knowledge in this area, which is why I am interested in joining your company. With the opportunity to work alongside experienced professionals and on challenging projects, I am confident that I will be able to further enhance my skills in HTML and contribute to the success of your organization.</h4>
-                </div>
-                <div class="cs">
-            <h2>CSS <ion-icon name="logo-css3"></ion-icon> </h2>
-                <h4> &nbsp;&nbsp;&nbsp; As a web developer, I have dedicated the past two years to mastering CSS and have independently created numerous visually stunning websites. However, I understand that there is always room for growth and improvement, which is why I am interested in joining your company. By working alongside experienced professionals and on challenging projects, I believe that I can continue to enhance my knowledge and skills in CSS. I am confident that my passion for web development and my ability to create visually appealing <a href="Coding/Games.html" target="_blank"> WEBSITES </a> will make me a valuable asset to your team.</h4>  
-                </div>
-            </div>  
-            <div class="ja-ms">
-                <div class="ja">
-            <h2>Java Script <ion-icon name="logo-nodejs"></ion-icon> </h2>
-                <h4> &nbsp;&nbsp;&nbsp; As a web developer, I have recently started working with JavaScript and find it to be an incredibly interesting language. While my experience with JavaScript is relatively new, I am eager to continue developing my skills in this area. I am confident that by joining your company, I will have the opportunity to work on exciting projects and collaborate with experienced professionals, which will enhance my knowledge and proficiency in JavaScript. I am excited to contribute my skills as a web developer and learn from others to become a well-rounded JavaScript developer.</h4>
-                </div>
-                <div class="ms">
-            <h2>MS Office</h2>    
-                <h4> &nbsp;&nbsp;&nbsp; In addition to my web development skills, I am proficient in Microsoft Office and have extensive experience using Excel to organize and analyze data. I am able to create complex formulas, generate insightful charts and graphs, and automate processes to improve efficiency. I am also skilled in using Microsoft Word and PowerPoint to create professional-looking documents and presentations for assignments and projects. I believe that my proficiency in these applications can be an asset in any workplace, and I am committed to staying up-to-date with the latest versions and features.</h4>
-                </div>
-            </div>
-            </div>
-            <div class="skill-img">
-                <img src="skills.png" width="300">
-            </div>
-        </div>
-        <!--Experiance-->
-        <div class="exp">
-            <div class="sub-exp">
-            <h1>Experience</h1> <br>
-            <h4> &nbsp;&nbsp;&nbsp; Even though I am a student and don't have any professional experience, I have gained practical skills by working on online platforms like Fiverr and Upwork. I have created visually appealing and responsive websites. To stay current with the latest trends, I have also taken online tutorials and courses. I am excited to use my knowledge and skills in a professional setting and contribute to a team-oriented environment. If given the opportunity to collaborate with your company, I am committed to leveraging my skills and knowledge to help your business succeed.</h4>
-            </div>
-            <div class="exp-img">
-                <img src="exp.png" width="300">
-            </div>
-        </div>
-    </div>
-
-    <!--Contact Us-->
-    <div class="cface">
-    <div class="vl2"></div>
-    <div id="contact">
-        <div class="cleft">
-        <h1>Contact Us</h1> <br>
-        <h4>Let's make something new, different and meaningful <br> or make things more visual or conceptual. </h4>
-            <br>
-        <ion-icon name="call-outline" class="icon"></ion-icon>
-            <h3>
-                +92-310-4668266
-            </h3> <br>
-        <ion-icon name="mail-outline" class="icon"></ion-icon>
-            <h3>
-                raufahmadwork@gmail.com
-            </h3> <br>
-        <ion-icon name="location-outline" class="icon"></ion-icon>
-            <h3>
-                St # 1, House # 3, Sadeque Qalooni Ravi Road LHR 
-            </h3> <br>
-        </div>
-        <div class="cright">
-            <h1>Drop a Line</h1>
-            <form  class="form">
-                <input type="text" class="subf" placeholder="Name" required>
-                <input type="email" class="subf" placeholder="E-mail" required> <br>
-                <input type="call" class="subf" placeholder="Phone#" required>
-                <input type="number" class="subf" placeholder="Budget" required> <br>
-                <textarea name="" id="msg" placeholder="Massege" ></textarea>
-            </form>
-        <button type="submit" class="btn2">Submit</button>
-        </div>
-    </div> 
-    <div class="vl2"></div>
-    </div>
 
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="work-section" id="work">
+        <h2 class="work-title">Work</h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="work1.jpg" alt="Work desk with papers and pencils">
+            </div>
+            <div class="work-item">
+                <img src="work2.jpg" alt="Minimal desk setup with keyboard">
+            </div>
+            <div class="work-item">
+                <img src="work3.jpg" alt="Person typing on laptop">
+            </div>
+            <div class="work-item">
+                <img src="work4.jpg" alt="Desk with laptop and camera lenses">
+            </div>
+            <div class="work-item">
+                <img src="work5.jpg" alt="Hand using computer mouse">
+            </div>
+            <div class="work-item">
+                <img src="work6.jpg" alt="Desk with notebook and laptop">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contact-section" id="contact">
+
+        <h2 class="contact-title">Contact</h2>
+
+        <form class="contact-form">
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
+
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="footer">
+
+        <h2 class="footer-name">Rauf Ahmad</h2>
+
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/01raufahmad" class="social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/raufahmad100/" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+        </div>
+
+        <div class="copyright">
+            © 2025 Copyright all rights reserved
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
